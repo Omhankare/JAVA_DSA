@@ -55,6 +55,7 @@ public class Star {
         }
         System.out.println(sum);
         System.out.println("--------------");
+
         int num = 83;
         boolean isPrime = true;
         for (int i = 2; i < num; i++) {
