@@ -3,6 +3,16 @@ import java.util.Arrays;
 
 public class Late {
 
+    public static int findFrequency(int[] number, int target) {
+        int count = 0;
+        for (int i = 0; i < number.length; i++) {
+            if (number[i] == target) {
+                count++;
+            }
+        }
+        return count;
+    }
+
     public static void main(String[] args) {
         // arrays- highest number of array, 
         int[] arr = {6, 8, 4, 2, 6, 4};
@@ -46,19 +56,19 @@ public class Late {
                 System.out.print(num + " ");
             }
         }
-
+        System.out.print("--------------");
         //Fibonacci 0 1 1 2 3 5 8
         int m = 10;
         int a = 0;
         int b = 1;
         for (int i = 0; i < m; i++) {
-            System.out.print(a + " ");
+            System.out.println(a + " ");
             int newi = a + b;
             a = b;
             b = newi;
 
         }
-
+        System.out.println("--------------");
         // find second largest, 
         int[] number = {2, 9, 8, 7, 1};
         int large = Integer.MIN_VALUE;
@@ -72,8 +82,12 @@ public class Late {
             }
         }
         System.out.println("2nd largest: " + secondLarge);
+        System.out.println("--------------");
 
         // find frequency of element in array
+        int[] ar = {5, 4, 6, 4, 5, 6};
+        System.out.println(findFrequency(ar, 4));
+
     }
 
 }
